@@ -14,9 +14,21 @@ if (tamanhoSenha > 1){
     numeroSenha.textContent = tamanhoSenha;
 }
 
-function aumentaTamanhoTamanho(){
+function aumentaTamanho(){
 if (tamanhoSenha < 20){
     tamanhoSenha = tamanhoSenha + 1;
     }
     numeroSenha.textContent = tamanhoSenha;
+}
+
+const campoSenha = document.querySelector('#campo-senha');
+
+const letrasMaiuscula = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+geraSenha();
+
+function geraSenha();{
+    let senha = '';
+    for (let i = 0; i < tamanhoSenha; i++){
+        let numeroAleatorio = Math.random() * letrasMaiuscula.length;
+    }
 }

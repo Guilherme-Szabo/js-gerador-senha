@@ -20,6 +20,7 @@ if (tamanhoSenha < 20){
     tamanhoSenha = tamanhoSenha + 1;
     }
     numeroSenha.textContent = tamanhoSenha;
+    geraSenha();
 }
 
 const campoSenha = document.querySelector('#campo-senha');
@@ -31,7 +32,7 @@ function geraSenha(){
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++){
         let numeroAleatorio = Math.random() * letrasMaiuscula.length;
-        numeroAleatorio = Math.floor(numeroAleatorio)
+        numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + letrasMaiuscula[numeroAleatorio];
     }
 
